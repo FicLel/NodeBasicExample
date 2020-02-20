@@ -14,7 +14,7 @@ app.get('/',function(req,res){
 app.post('/login',function(req,res){
     let user_name = req.body.name;
     let password = req.body.password;
-    res.send("ESTEESMITOKEN");
+    res.send(JSON.parse("ESTEESMITOKEN"));
   });
 
 app.listen(3000,function(){
